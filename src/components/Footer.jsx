@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Footer = () => {
   return (
-    <div className='w-full text-sm font-semibold h-20 bg-charcoal-800 flex items-center justify-center'>
+    <div className='w-full text-sm font-semibold h-20 bg-charcoal-800 flex items-center justify-center relative z-10'>
       Made by{' '}
       <motion.a
         href='https://github.com/Darkryhr'

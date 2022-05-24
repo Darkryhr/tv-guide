@@ -64,16 +64,20 @@ const Show = () => {
 
 export default Show;
 
+{
+  /* <div className=' w-full absolute top-0 -z-10 opacity-30'> */
+}
+
 const Info = ({ show }) => (
-  <article className='flex items-center justify-evenly mx-auto bg-gradient-to-t from-charcoal-400 min-h-screen'>
-    <div className=' max-w-md  w-1/2 h-fit px-20'>
+  <article className='flex items-center justify-evenly mx-auto bg-gradient-to-t from-charcoal-400 min-h-screen overflow-hidden relative'>
+    <div className='sm:max-w-md max-w-none absolute sm:relative md:w-1/2 w-full h-fit sm:px-20 px-0 top-0 -z-10 opacity-30 sm:opacity-100 '>
       <img
         src={show?.image?.original}
         className='object-cover rounded-lg shadow-xl'
         alt=''
       />
     </div>
-    <div className='py-10 w-1/2 flex flex-col'>
+    <div className='py-10 md:w-1/2 px-10 md:px-0 flex flex-col'>
       <h1 className='text-white font-bold text-7xl pb-4 leading-none'>
         {show.name}
         <span className='text-sm opacity-50 pl-2'>{show.status}</span>
@@ -103,11 +107,11 @@ const Info = ({ show }) => (
       <div className='flex w-1/2 justify-between pt-4'>
         <div className='flex flex-col items-center'>
           <h4 className='text-sm font-medium'>Network</h4>
-          <p className='font-light text-xs'>
+          <p className='font-light text-xs truncate'>
             {show.network ? show.network?.name : show?.webChannel?.name}
           </p>
         </div>
-        <div className='flex flex-col items-center'>
+        <div className='flex flex-col items-center mx-2'>
           <h4 className='text-sm font-medium'>Runtime</h4>
           <p className='font-light text-xs'>{show.runtime} Min</p>
         </div>
