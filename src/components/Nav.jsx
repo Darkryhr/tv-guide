@@ -15,11 +15,11 @@ const Nav = () => {
 
   return (
     <>
-      <nav className='flex justify-between items-center px-6 py-4 border-b border-charcoal-300 fixed w-full z-50 bg-charcoal-700'>
+      <nav className='flex justify-between items-center px-6 py-4 border-b border-charcoal-300 fixed max-w-full w-full z-50 bg-charcoal-700'>
         <div>
           <Link to='/'>
             <motion.h1
-              className='text-4xl font-bold text-white'
+              className='sm:text-4xl text-2xl font-bold text-white'
               whileTap={{
                 scale: 0.9,
               }}
