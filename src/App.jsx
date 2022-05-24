@@ -70,7 +70,7 @@ function PaginatedItems({ itemsPerPage, items }) {
         pageCount={pageCount}
         previousLabel={<Previous />}
         renderOnZeroPageCount={null}
-        containerClassName='flex items-center text-white items-center sm:w-fit max-w-64 w-1/2 justify-between mx-auto pt-6 block'
+        containerClassName='flex items-center text-white items-center justify-between mx-auto pt-6 sm:w-64'
         pageLinkClassName='text-orange-400 p-4 hover:bg-charcoal-500 hover:rounded-md transition'
         activeLinkClassName='text-orange-300'
         previousClassName='h-9'
