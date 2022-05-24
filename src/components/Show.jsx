@@ -64,10 +64,6 @@ const Show = () => {
 
 export default Show;
 
-{
-  /* <div className=' w-full absolute top-0 -z-10 opacity-30'> */
-}
-
 const Info = ({ show }) => (
   <article className='flex items-center justify-evenly mx-auto bg-gradient-to-t from-charcoal-400 min-h-screen overflow-hidden relative'>
     <div className='sm:max-w-md max-w-none absolute sm:relative md:w-1/2 w-full h-fit sm:px-20 px-0 top-0 -z-10 opacity-30 sm:opacity-100 '>

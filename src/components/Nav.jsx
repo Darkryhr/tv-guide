@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Search } from './icons';
 import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -50,6 +50,7 @@ const Nav = () => {
           </form>
         </div>
       </nav>
+      {/* buffer */}
       <div className='w-full h-20'></div>
     </>
   );

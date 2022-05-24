@@ -4,8 +4,8 @@ import Placeholder from './placeholder.jpg';
 import { motion } from 'framer-motion';
 
 const ShowCard = ({ data }) => {
-  const { image, name, status, id } = data;
   const navigate = useNavigate();
+  const { image, name, status, id } = data;
 
   return (
     <motion.div
@@ -20,7 +20,7 @@ const ShowCard = ({ data }) => {
         scale: 1.1,
       }}
     >
-      <img
+      <motion.img
         src={image ? image?.medium : Placeholder}
         alt={name}
         className='rounded-sm  hover:brightness-50 transition duration-300'

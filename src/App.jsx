@@ -10,18 +10,14 @@ const App = () => {
 
   useEffect(() => {
     const search = async () => {
-      const res = await instance.get('/shows', {
-        maxContentLength: 2000,
-      });
-
+      const res = await instance.get('/shows');
       setResponse(res.data);
     };
-
     search();
   }, []);
 
   return (
-    <main className=''>
+    <main>
       <div className='block relative'>
         {response.length ? (
           <PaginatedItems itemsPerPage={16} items={response} />
@@ -70,7 +66,7 @@ function PaginatedItems({ itemsPerPage, items }) {
         pageCount={pageCount}
         previousLabel={<Previous />}
         renderOnZeroPageCount={null}
-        containerClassName='flex items-center text-white items-center justify-between mx-auto pt-6 sm:w-64'
+        containerClassName='flex items-center text-white items-center justify-between mx-auto pt-6 sm:w-96'
         pageLinkClassName='text-orange-400 sm:p-4 p-1 hover:bg-charcoal-500 hover:rounded-md transition'
         activeLinkClassName='text-orange-300'
         previousClassName='h-9'

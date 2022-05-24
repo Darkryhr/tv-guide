@@ -25,7 +25,7 @@ const List = () => {
   return (
     <>
       {response.length ? (
-        <div className='grid responsive-grid gap-8 justify-items-center mx-auto p-8'>
+        <div className='min-h-screen grid responsive-grid gap-8 justify-items-center mx-auto p-8'>
           {response.map(res => (
             <ShowCard data={res.show} key={res.show.id} />
           ))}
