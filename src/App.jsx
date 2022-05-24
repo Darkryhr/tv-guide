@@ -66,15 +66,15 @@ function PaginatedItems({ itemsPerPage, items }) {
         breakLabel='...'
         nextLabel={<Next />}
         onPageChange={handlePageClick}
-        pageRangeDisplayed={1}
+        pageRangeDisplayed={3}
         pageCount={pageCount}
         previousLabel={<Previous />}
         renderOnZeroPageCount={null}
         containerClassName='flex items-center text-white items-center justify-between mx-auto pt-6 sm:w-64'
-        pageLinkClassName='text-orange-400 p-4 hover:bg-charcoal-500 hover:rounded-md transition'
+        pageLinkClassName='text-orange-400 sm:p-4 p-1 hover:bg-charcoal-500 hover:rounded-md transition'
         activeLinkClassName='text-orange-300'
         previousClassName='h-9'
-        breakClassName='text-orange-400 p-4 hover:bg-charcoal-500 hover:rounded-md transition'
+        breakClassName='text-orange-400 sm:p-4 p-1 hover:bg-charcoal-500 hover:rounded-md transition'
       />
     </div>
   );
