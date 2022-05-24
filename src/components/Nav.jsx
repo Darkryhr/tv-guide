@@ -15,7 +15,7 @@ const Nav = () => {
 
   return (
     <>
-      <nav className='flex justify-between items-center px-6 py-4 border-b border-charcoal-300 fixed max-w-full w-full z-50 bg-charcoal-700'>
+      <nav className='flex justify-between items-center px-6 py-4 border-b border-charcoal-300 fixed z-50 bg-charcoal-700 w-screen '>
         <div>
           <Link to='/'>
             <motion.h1
