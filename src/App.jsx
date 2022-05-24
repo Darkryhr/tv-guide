@@ -37,7 +37,7 @@ export default App;
 
 function Items({ currentItems }) {
   return (
-    <div className='grid responsive-grid gap-8 justify-items-center w- '>
+    <div className='grid responsive-grid gap-8 justify-items-center'>
       {currentItems && currentItems.map(item => <ShowCard data={item} />)}
     </div>
   );
@@ -60,13 +60,13 @@ function PaginatedItems({ itemsPerPage, items }) {
   };
 
   return (
-    <div className='mx-auto p-8 '>
+    <div className='mx-auto p-4 '>
       <Items currentItems={currentItems} />
       <ReactPaginate
         breakLabel='...'
         nextLabel={<Next />}
         onPageChange={handlePageClick}
-        pageRangeDisplayed={4}
+        pageRangeDisplayed={1}
         pageCount={pageCount}
         previousLabel={<Previous />}
         renderOnZeroPageCount={null}
